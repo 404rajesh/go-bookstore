@@ -91,3 +91,8 @@ localhost:9010
 
 - Rajesh Kumar Jha
 - GitHub: [@404rajesh](https://github.com/404rajesh)
+
+## 📝 License
+This project is licensed under the MIT License.
+
+**The project follows a clean modular structure, using Gorilla Mux for routing and GORM for database operations. It is intended for educational purposes and learning backend development using Golang.**
