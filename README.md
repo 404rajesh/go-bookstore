@@ -3,8 +3,6 @@
 A simple RESTful API built with Go (Golang) using GORM ORM and MySQL database.  
 This project manages a bookstore inventory, allowing users to Create, Read, Update, and Delete (CRUD) book records.
 
----
-
 ## 🚀 Features
 
 - Create a new book entry 📖
@@ -15,8 +13,6 @@ This project manages a bookstore inventory, allowing users to Create, Read, Upda
 - Modular and clean folder structure
 - Auto database migration with GORM
 
----
-
 ## 🛠️ Technologies Used
 
 - **Go (Golang)** — Core language
@@ -25,7 +21,73 @@ This project manages a bookstore inventory, allowing users to Create, Read, Upda
 - **MySQL** — Database
 - **Postman** — API testing (optional)
 
----
-
 ## 📂 Project Structure
 
+go-bookstore/
+
+│
+
+├── pkg/
+
+│   ├── config/
+
+│   ├── controllers/
+
+│   ├── model/
+
+│   └── utils/
+
+│
+
+├── routes/
+
+├── main.go
+
+└── go.mod
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+git clone https://github.com/yourusername/go-bookstore.git
+cd go-bookstore
+
+### 2. Install Dependencies
+
+go mod tidy
+
+### 3. Set Up MySQL Database
+
+- Install and start MySQL server.
+- Create a database:
+
+CREATE DATABASE simplerest;
+
+- Update the database credentials in `pkg/config/app.go`:
+
+d, err := gorm.Open("mysql", "username:password@/simplerest?charset=utf8&parseTime=True&loc=Local")
+
+(Replace `username` and `password` with your MySQL credentials.)
+
+### 4. Run the Application
+
+go run main.go
+
+Server will start running at:
+
+localhost:9010
+
+## 📖 API Endpoints
+
+| Method | Endpoint             | Description          |
+|--------|----------------------|----------------------|
+| POST   | `/book/`              | Create a new book     |
+| GET    | `/book/`              | Get all books         |
+| GET    | `/book/{bookId}`      | Get book by ID        |
+| PUT    | `/book/{bookId}`      | Update book by ID     |
+| DELETE | `/book/{bookId}`      | Delete book by ID     |
+
+## 👨‍💻 Author
+
+- Rajesh Kumar Jha
+- GitHub: [@404rajesh](https://github.com/404rajesh)
