@@ -1,0 +1,38 @@
+/* public/css/login.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #message {
+    color: red;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3f51b5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .admin-login {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: #303f9f;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-card {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .book-card h3 {
+    margin: 0;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+  }
+  
+  #searchBar {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto 30px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  

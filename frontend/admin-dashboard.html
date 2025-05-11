@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+  <h1>📚 Admin Dashboard</h1>
+
+  <button onclick="showAddForm()">Add New Book</button>
+  <div id="book-form" style="display:none;">
+    <h3 id="form-title">Add Book</h3>
+    <form id="bookForm">
+      <input type="hidden" id="bookId" />
+      <input type="text" id="name" placeholder="Book Name" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <input type="text" id="publication" placeholder="Publication" required />
+      <button type="submit">Submit</button>
+      <button type="button" onclick="hideForm()">Cancel</button>
+    </form>
+  </div>
+
+  <table id="booksTable">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Author</th><th>Publication</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="bookList"></tbody>
+  </table>
+
+  <button onclick="logout()">Logout</button>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>
